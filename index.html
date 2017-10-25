@@ -1,0 +1,56 @@
+﻿<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>       
+    <link rel="stylesheet" href="css/pignose.tab.css" />
+    <style type="text/css">
+        body {
+            font-family: "Microsoft YaHei","宋体","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo;
+        }
+        .pignose-tab-box {
+            max-width: 1200px;
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 40px;
+            padding-top: 40px;
+            border-top: 1px solid #efefef;
+            font-family: 'Raleway', 'helvetica', 'sans-serif';
+            text-align: center;
+        }                               
+        
+    </style>
+</head>
+<body>
+    <div class="pignose-tab-box">
+        <div class="pignose-tab pignose-tab-mint">
+            <ul>
+                <li>
+                    <a href="#">日报表</a>
+                    <div>
+                        日报表
+                    </div>
+                </li>
+                <li>
+                    <a href="#">月报表</a>
+                    <div>
+                        月报表
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>    
+    <script type="text/javascript" src="js/pignose.tab.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pignose-tab').pignoseTab({
+                animation: true,
+                children: '.pignose-tab'
+            });
+        });
+    </script>
+</body>
+</html>
